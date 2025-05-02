@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    div{
+        font-size: 17px;
+        margin: 20px;
+     }
+     h3{
+        margin: 20px;
+     }
+     .email{
+      font-size: 15px;
+      font-family: Arial, Helvetica, sans-serif;
+     }
+     </style>
+</head>
+<body>
+
+    <header>
+        <H1> Adventure Holidays </H1>
+       </header> 
+   
+        <nav class="navbar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="RockClimbing.html">Rock Climbing</a></li>
+            <li><a href="MountainBiking.html">Mountain Biking</a></li>
+            <li><a href="Walking.html">Walking</a></li>
+            <li><a href="WhiteWaterRafting.html">White Water Rafting</a></li>
+            <li><a href="Booking.html">Booking</a></li>
+          </ul>
+        </nav>
+
+<table> <!--creates a table-->
+  <tr>
+    <th>Activity</th> <!--this is a row with headings for each collum--> <!--first collum-->
+    <th>Location</th> <!--second collum-->
+    <th>Price</th> <!--third collum-->
+  </tr>
+  <tr>
+    <td>Rock Climbing</td> <!--this is the information for a row-->
+    <td>Hörnli Ridge, Eiger, Gimmelwald</td>
+    <td>£200, £250 with guide</td>
+  </tr>
+  <tr>
+    <td>Mountain Biking</td>
+    <td>Grosse Scheidegg route, Verbier, Zermatt</td>
+    <td>£150pp, £250 with guide (equipment included)</td>
+  </tr>
+  <tr>
+    <td>Walking Trails</td>
+    <td>Via Alpina, Jura Crest Trail, ViaGottardo</td>
+    <td>Free, £70 for guide</td>
+  </tr>
+  <tr>
+    <td>White-Water Rafting</td>
+    <td>Lütschine, Rhône River</td>
+    <td>£400 for groups of 4, £400+ for groups of 5></td>
+  </tr>
+</table>
+
+          <h3>Booking Form</h3>
+          <div>
+            <form action="/action_page.php">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+              <label for="nopeople">No. of People</label>
+              <input type="number" id="nopeople" name="number" placeholder="number of people.." required> <!--input is required in order to submit-->
+          
+              <label for="Activity">Activity</label>
+              <select id="Activity" name="Activity">
+                <option value="Mountain Biking">Mountain Biking</option>
+                <option value="White Water Rafting">White Water Rafting</option>
+                <option value="Rock Climbing">Rock Climbing</option>
+                <option value="Walking trail">Walking trail</option>
+              </select>
+            
+              <input type="submit" value="Submit"> <!--submit button-->
+            </form>
+          </div>
+
+          <a class="email" href="mailto:30318298@cityofglacol.ac.uk">For any other enquiries, click here.</a> <!--email linked to text-->
+
+        <footer>
+            || © Adventure Holidays 2022 ||                                 
+         </footer>
+    
+</body>
+</html>
